@@ -260,7 +260,9 @@ def superFindTags(tags,superTagName,name,superPairName='',superPairValue='',pair
                 tagsToReturn.extend(superfindTags(subTags,superTagName,name,pairName,pairValue))
     return tagsToReturn
 
-#this file contains three classes and two methods that I use to write a webscraper. First I create the a page object from an html file, then I look through the html file and figure out where the information I want is. It may be the value in a name/value pair, but often it's tag "data", or the stuff that occurs between <>'s. In either case, I use the searching methods findTags and superFindTags to find all the tags which have the data I want, then copy it to text or csv files. An example of this is in 
-       
+#this file contains three classes and two methods that I use to build a scraping script for a specific application.
+#First I create the a page object from an html file, then I look through the html file and figure out where the information I want is.
+#It may be the value in a name/value pair, but often it's tag "data", or the stuff that occurs between <>'s.
+#In either case, I use the searching methods findTags and superFindTags to find all the tags which have the data I want, then copy it to text or csv files.
                     
                         
